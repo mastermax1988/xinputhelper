@@ -8,7 +8,8 @@ using namespace std;
 using namespace boost;
 command::cmd_return_type command::exec(const char* cmd)
 {
-	FILE* pipe = popen(cmd, "r");
+	cout << "executing " << cmd << endl;
+  FILE* pipe = popen(cmd, "r");
 	if (!pipe) throw NULL;
 	char buffer[128];
 	std::string result = "";

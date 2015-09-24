@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
 project (xinputhelper)
 FILE(GLOB mysrc src/*.cc)
-add_compile_options(-Wall)
+add_compile_options(-Wall -std=c++11)
 add_executable(xinputhelper ${mysrc} main.cc)
